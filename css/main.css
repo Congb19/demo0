@@ -76,7 +76,8 @@ div,p,a{
     float: left;
     position: absolute;
     /*left: 2rem;*/
-    border: 2px red solid;
+    /*border: 2px red solid;*/
+    top: 0.5rem;
     height: 5rem;
     width: 5rem;
 }
