@@ -8,7 +8,7 @@ div,p,a{
     font-size:20px;
     font-size:2rem;
 }
-#content{
+#content1{
     padding: 0;
     background-color: rgba(150,230,161,0.5);
 }
@@ -35,15 +35,18 @@ div,p,a{
     /*font-size: 1rem; !important;*/
 }
 .item{
+    position: relative;
+    /*display: inline;*/
     margin-top: 2rem;
     left: 0;
     right: 0;
     height: 15rem;
-    background-color: #BBB;
+    background-color: #EEE;
     width: 100%;
 }
 .itemimg{
     position: relative;
+    display: inline;
     top: -2.2rem;
     height: 100%;
     float: right;
@@ -53,24 +56,40 @@ div,p,a{
     top: 1rem;
 }
 
+.addbtn{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+#add1{
+    /*top: 0rem;*/
+}
+#add2{
+    /*top: 1rem;*/
+}
+#add3{
+    /*top: 1rem;*/
+}
 
 .footbtn{
     display: inline;
     float: left;
-    position: relative;
+    position: absolute;
+    /*left: 2rem;*/
     border: 2px red solid;
     height: 5rem;
     width: 5rem;
 }
 #btn1{
-    left: 6%;
-}
-#btn2{
-    left: 16%;
+    left: 20%;
+    transform: translateX(-50%);
 }
 #btn3{
-    left: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+    /*text-align: center;*/
 }
 #btn4 {
-    left: 36%;
+    left: 80%;
+    transform: translateX(-50%);
 }

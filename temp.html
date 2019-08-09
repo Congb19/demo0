@@ -12,13 +12,13 @@
     <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/units.css">
+    <script src="js/main.js"></script>
 </head>
 
 
 <!--在这写一个通用header footer panel-->
 <body>
 <div data-role="page" id="page1">
-
     <!--PANEL-->
     <div data-role="panel" id="mesPanel" data-position="left">
         <h2>消息</h2>
@@ -28,7 +28,6 @@
         <h2>设置</h2>
         <p>面板内容..</p>
     </div>
-
     <!--MESSAGEBOX-->
         <!--<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">打开对话框弹窗</a>-->
     <div data-role="popup" id="myPopupDialog">
@@ -53,31 +52,66 @@
         <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
         <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
     </div>
-    <div data-role="content" id="content">
+    <div data-role="content" id="content1">
         <div class="item">
             <div class="itemtitle">种菠菜【先种后吃】</div>
             <img src="img/bocai.png" class="itemimg"/>
-            <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext headbtn">+</a>
+            <a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
         </div>
         <div class="item">
             <div class="itemtitle">种黄瓜【先种后吃】</div>
             <img src="img/huanggua.png" class="itemimg"/>
-            <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext headbtn">+</a>
+            <a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
         </div>
         <div class="item">
             <div class="itemtitle">种菠菜【先种后吃】</div>
             <img src="img/bocai.png" class="itemimg"/>
-            <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext headbtn">+</a>
+            <a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
         </div>
     </div>
     <div data-role="footer" id="footer" data-position="fixed" data-tap-toggle="false">
-        <div class="footbtn" id="btn1"></div>
-        <div class="footbtn" id="btn2"></div>
-        <div class="footbtn" id="btn3"></div>
-        <div class="footbtn" id="btn4"></div>
-        <!--<h1>此处是四个切页面的按钮</h1>-->
+        <div class="footbtn" id="btn1"><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+        <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
+        <div onclick="tomian2()" class="footbtn" id="btn3"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
+        <div class="footbtn" id="btn4"><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
     </div>
 </div>
+
+切换按钮！
+<a id="qiehuan1" href="#page1">123123</a>
+<a id="qiehuan2" href="#page2">123123</a>
+<a id="qiehuan3" href="#page3">123123</a>
+
+
+
+<div class="暂用的框框" id="page2">
+    <div data-role="content" id="content2">
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <!--<a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <div class="item">
+            <div class="itemtitle">种黄瓜【先种后吃】</div>
+            <img src="img/huanggua.png" class="itemimg"/>
+            <!--<a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <!--<a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <a href="#page2">123123</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
