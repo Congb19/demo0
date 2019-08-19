@@ -45,11 +45,17 @@ div,p,a{
     width: 100%;
 }
 .itemimg{
-    position: relative;
+    /*position: relative;*/
+    /*top: -2.2rem;*/
+    /*float: right;*/
+
+    position: absolute;
+    top: 0rem;
+    right: 0;
+
     display: inline;
-    top: -2.2rem;
+
     height: 100%;
-    float: right;
 }
 .itemtitle{
     position: relative;
@@ -82,7 +88,7 @@ div,p,a{
     width: 5rem;
 }
 #btn1{
-    left: 20%;
+    left: 16%;
     transform: translateX(-50%);
 }
 #btn3{
@@ -91,6 +97,6 @@ div,p,a{
     /*text-align: center;*/
 }
 #btn4 {
-    left: 80%;
+    left: 84%;
     transform: translateX(-50%);
 }

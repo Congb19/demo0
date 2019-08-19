@@ -1,3 +1,4 @@
+<!--Congb19 2019/8-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,43 +13,137 @@
     <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/units.css">
+    <script src="js/main.js"></script>
 </head>
 
 
 <!--在这写一个通用header footer panel-->
 <body>
 <div data-role="page" id="page1">
+    <!--PANEL-->
+    <div data-role="panel" id="mesPanel" data-position="left">
+        <h2>消息</h2>
+        <p>面板内容..</p>
+    </div>
     <div data-role="panel" id="setPanel" data-position="right">
         <h2>设置</h2>
         <p>面板内容..</p>
     </div>
-    <div data-role="header" id="header" data-position="fixed" data-tap-toggle="false">
-        <h1>淘菜</h1>
-        <a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right">设置</a>
+    <!--MESSAGEBOX-->
+    <!--<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">打开对话框弹窗</a>-->
+    <div data-role="popup" id="myPopupDialog">
+        <div data-role="header">
+            <h1>头部文本</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h2>加入购物车成功!</h2>
+            <p>请前往购物车设置订购量</p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">返回</a>
+        </div>
+        <div data-role="footer">
+            <h1>底部文本</h1>
+        </div>
     </div>
-    <div data-role="content">
-        <p>
-            大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计） Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）大家好， 有没有人帮忙看看360手机卫士官网这个页面，底部footer的效果是怎么弄的？ http://shouji.360.cn/#7thPage 底部的footer可以根据页面大小有滑动的效果的。论坛
-            Datagrid中footer的使用（可用于显示合计）
-        </p>
+
+    <!--MAINPAGE-->
+    <div data-role="header" id="header" data-position="fixed" data-tap-toggle="false">
+        <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
+        <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
+        <h1>淘菜</h1>
+        <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
+        <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
+    </div>
+    <div data-role="content" id="content1">
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        </div>
+        <div class="item">
+            <div class="itemtitle">种黄瓜【先种后吃】</div>
+            <img src="img/huanggua.png" class="itemimg"/>
+            <a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        </div>
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        </div>
     </div>
     <div data-role="footer" id="footer" data-position="fixed" data-tap-toggle="false">
-        <h1>四个按钮</h1>
+        <div onclick="tomain1()" class="footbtn" id="btn1"><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+        <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
+        <div onclick="tomian2()" class="footbtn" id="btn3"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
+        <div onclick="tomian3()" class="footbtn" id="btn4"><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
     </div>
 </div>
+
+<!--隐藏的切换按钮！通过点击图标调用函数click-->
+<a id="qiehuan1" href="#page1">123123</a>
+<a id="qiehuan2" href="#page2">123123</a>
+<a id="qiehuan3" href="#page3">123123</a>
+
+
+
+<div class="暂用的框框" id="page2">
+    <div data-role="content" id="content2">
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <!--<a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <div class="item">
+            <div class="itemtitle">种黄瓜【先种后吃】</div>
+            <img src="img/huanggua.png" class="itemimg"/>
+            <!--<a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <!--<a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <!--<a href="#page2">123123</a>-->
+        <div data-role="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+            <div onclick="tomain1()" class="footbtn" id="btn1"><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+            <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
+            <div onclick="tomian2()" class="footbtn" id="btn3"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomian3()" class="footbtn" id="btn4"><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="暂用的框框" id="page3">
+    <div data-role="content" id="content3">
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <!--<a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <div class="item">
+            <div class="itemtitle">种黄瓜【先种后吃】</div>
+            <img src="img/huanggua.png" class="itemimg"/>
+            <!--<a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <!--<a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        </div>
+        <!--<a href="#page2">123123</a>-->
+        <div data-role="footer" id="footer" data-position="fixed" data-tap-toggle="false">
+            <div onclick="tomain1()" class="footbtn" id="btn1"><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+            <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
+            <div onclick="tomian2()" class="footbtn" id="btn3"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomian3()" class="footbtn" id="btn4"><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
+        </div>
+    </div>
+</div>
+
+
+
 
 </body>
 </html>
