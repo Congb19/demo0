@@ -8,13 +8,13 @@ div,p,a{
     font-size:20px;
     font-size:2rem;
 }
-#content1{
+.content{
     padding: 0;
     background-color: rgba(150,230,161,0.5);
 }
-#header{
+.header{
     height: 6rem;
-    background-color: #96e6a1;
+    background-color: #96e6a1 !important;
     /*padding: 0;*/
     /*position: absolute !important;*/
     /*top : 45px !important;*/
@@ -22,8 +22,8 @@ div,p,a{
     /*bottom : 45px !important;*/
     /*left : 0 !important;*/
 }
-#footer{
-    background-color: #96e6a1;
+.footer{
+    background-color: #96e6a1 !important;
     height: 6rem;
 }
 .headbtn{
@@ -32,12 +32,13 @@ div,p,a{
     transform: translateY(50%);
     /*height: 2.5rem;*/
     /*width: 0;*/
-    /*font-size: 1rem; !important;*/
+    /*font-size: 1rem !important;*/
 }
 .item{
     position: relative;
     /*display: inline;*/
     margin-top: 2rem;
+    margin-bottom: 2rem;
     left: 0;
     right: 0;
     height: 15rem;
@@ -87,16 +88,16 @@ div,p,a{
     height: 5rem;
     width: 5rem;
 }
-#btn1{
+.btn1{
     left: 16%;
     transform: translateX(-50%);
 }
-#btn3{
+.btn3{
     left: 50%;
     transform: translateX(-50%);
     /*text-align: center;*/
 }
-#btn4 {
+.btn4 {
     left: 84%;
     transform: translateX(-50%);
 }
