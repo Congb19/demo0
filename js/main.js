@@ -15,3 +15,6 @@ function tomian2() {
 function tomian3() {
     $("#qiehuan3").click();
 }
+function updatecart() {
+    
+}
