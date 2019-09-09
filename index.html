@@ -21,128 +21,149 @@
 <body>
 <div data-role="page" id="page1">
 
+        <!--PANEL-->
+        <div data-role="panel" id="mesPanel" data-position="left">
+            <h2>消息</h2>
+            <p>面板内容..</p>
+        </div>
+        <div data-role="panel" id="setPanel" data-position="right">
+            <h2>设置</h2>
+            <p>面板内容..</p>
+        </div>
+        <!--MESSAGEBOX-->
+        <!--<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">打开对话框弹窗</a>-->
+        <div data-role="popup" id="myPopupDialog1">
+            <!--<div data-role="header">-->
+                <!--<h1>头部文本</h1>-->
+            <!--</div>-->
+            <div data-role="main" class="ui-content">
+                <h2>加入购物车成功!</h2>
+                <p>请前往购物车设置订购量</p>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">返回</a>
+            </div>
+            <!--<div data-role="footer">-->
+                <!--<h1>底部文本</h1>-->
+            <!--</div>-->
+        </div>
 
-    <!--PANEL-->
-    <div data-role="panel" id="mesPanel" data-position="left">
-        <h2>消息</h2>
-        <p>面板内容..</p>
-    </div>
-    <div data-role="panel" id="setPanel" data-position="right">
-        <h2>设置</h2>
-        <p>面板内容..</p>
-    </div>
-    <!--MESSAGEBOX-->
-    <!--<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">打开对话框弹窗</a>-->
-    <div data-role="popup" id="myPopupDialog">
-        <div data-role="header">
-            <h1>头部文本</h1>
-        </div>
-        <div data-role="main" class="ui-content">
-            <h2>加入购物车成功!</h2>
-            <p>请前往购物车设置订购量</p>
-            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">返回</a>
-        </div>
-        <div data-role="footer">
-            <h1>底部文本</h1>
-        </div>
-    </div>
 
-
-    <!--MAINPAGE-->
-    <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
-        <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
-        <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
-        <h1>淘菜</h1>
-        <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
-        <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
-    </div>
-    <div data-role="content" class="content" id="content1">
-        <div class="item">
-            <div class="itemtitle">种菠菜【先种后吃】</div>
-            <img src="img/bocai.png" class="itemimg"/>
-            <a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        <!--MAINPAGE-->
+        <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
+            <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
+            <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
+            <h1>淘菜</h1>
+            <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
+            <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
         </div>
-        <div class="item">
-            <div class="itemtitle">种黄瓜【先种后吃】</div>
-            <img src="img/huanggua.png" class="itemimg"/>
-            <a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        <div data-role="content" class="content" id="content1">
+            <div class="item">
+                <div class="itemtitle">种菠菜【先种后吃】<br><br>150元/平米</div>
+                <img src="img/bocai.png" class="itemimg"/>
+                <a onclick="plus1()" id="add1" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item">
+                <div class="itemtitle">种黄瓜【先种后吃】</div>
+                <img src="img/huanggua.png" class="itemimg"/>
+                <a onclick="plus2()" id="add2" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item">
+                <div class="itemtitle">种丝瓜【先种后吃】</div>
+                <img src="img/sigua.png" class="itemimg"/>
+                <a onclick="plus3()" id="add3" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item">
+                <div class="itemtitle">玉米【订货上门】</div>
+                <img src="img/yumi.jpg" class="itemimg"/>
+                <a onclick="plus4()" id="add4" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item">
+                <div class="itemtitle">山东大蒜【订货上门】</div>
+                <img src="img/dasuan.jpg" class="itemimg"/>
+                <a onclick="plus5()" id="add5" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item">
+                <div class="itemtitle">油麦菜【订货上门】</div>
+                <img src="img/youmaicai.jpg" class="itemimg"/>
+                <a onclick="plus6()" id="add6" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item">
+            <div class="itemtitle">绿黄瓜【订货上门】</div>
+                <img src="img/lvhuanggua.jpg" class="itemimg"/>
+                <a onclick="plus7()" id="add7" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
         </div>
-        <div class="item">
-            <div class="itemtitle">种丝瓜【先种后吃】</div>
-            <img src="img/sigua.png" class="itemimg"/>
-            <a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
+            <div onclick="tomain1()" class="footbtn btn1" ><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+            <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
+            <div onclick="tomian2()" class="footbtn btn3" ><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomian3()" class="footbtn btn4" ><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
         </div>
-        <div class="item">
-            <div class="itemtitle">玉米【订货上门】</div>
-            <img src="img/yumi.jpg" class="itemimg"/>
-            <a id="add4" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-        </div>
-        <div class="item">
-            <div class="itemtitle">山东大蒜【订货上门】</div>
-            <img src="img/dasuan.jpg" class="itemimg"/>
-            <a id="add5" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-        </div>
-        <div class="item">
-            <div class="itemtitle">油麦菜【订货上门】</div>
-            <img src="img/youmaicai.jpg" class="itemimg"/>
-            <a id="add6" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-        </div><div class="item">
-        <div class="itemtitle">绿黄瓜【订货上门】</div>
-            <img src="img/lvhuanggua.jpg" class="itemimg"/>
-            <a id="add7" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-        </div>
-    </div>
-    <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-        <div onclick="tomain1()" class="footbtn btn1" ><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
-        <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
-        <div onclick="tomian2()" class="footbtn btn3" ><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
-        <div onclick="tomian3()" class="footbtn btn4" ><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
-    </div>
-
 
 </div>
 
 
 <div data-role="page" class="暂用的框框" id="page2">
 
-
-
-
-    <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
-        <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
-        <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
-        <h1>购物车</h1>
-        <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
-        <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
-    </div>
-    <div data-role="content" class="content" id="content2">
-        <div class="item">
-            <div class="itemtitle">种菠菜【先种后吃】</div>
-            <img src="img/bocai.png" class="itemimg"/>
-            <!--<a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
-        </div>
-        <div class="item">
-            <div class="itemtitle">种黄瓜【先种后吃】</div>
-            <img src="img/huanggua.png" class="itemimg"/>
-            <!--<a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
-        </div>
-        <div class="item">
-            <div class="itemtitle">种菠菜【先种后吃】</div>
-            <img src="img/bocai.png" class="itemimg"/>
-            <!--<a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
-        </div>
-        <!--<a href="#page2">123123</a>-->
-        <div data-role="footer"  class="footer" data-position="fixed" data-tap-toggle="false">
-            <div onclick="tomain1()" class="footbtn btn1" ><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
-            <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
-            <div onclick="tomian2()" class="footbtn btn3" ><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
-            <div onclick="tomian3()" class="footbtn btn4" ><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
+    <div data-role="popup" id="myPopupDialog2">
+        <div data-role="main" class="ui-content">
+            <h2>您确定要移除吗？</h2>
+            <p>...</p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">返回</a>
+            <a onclick="remove(cartvalue)" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-check ui-btn-icon-right" data-rel="back">确定</a>
         </div>
     </div>
 
+    <div class="background">
 
 
+        <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
+            <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
+            <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
+            <h1>购物车</h1>
+            <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
+            <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
+        </div>
+        <div data-role="content" class="content" id="content2">
+            <div class="item" id="cart1">
+                <div class="itemtitle">种菠菜【先种后吃】</div>
+                <div class="cartitem">
+                    <a onclick="minus1()" id="cartminus1" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartminusbtn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
+                    <div id="cartnum1" class="cartnum">0</div>
+                    <a onclick="plus1()" id="cartplus1" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartplusbtn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                </div>
+                <img src="img/bocai.png" class="itemimg"/>
+                <a onclick="cartval1()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item" id="cart2">
+                <div class="itemtitle">种黄瓜【先种后吃】</div>
+                <div class="cartitem">
+                    <a onclick="minus2()" id="cartminus2" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartminusbtn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
+                    <div id="cartnum2" class="cartnum">0</div>
+                    <a onclick="plus2()" id="cartplus2" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartplusbtn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                </div>
+                <img src="img/huanggua.png" class="itemimg"/>
+                <a onclick="cartval2()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <div class="item" id="cart3">
+                <div class="itemtitle">种丝瓜【先种后吃】</div>
+                <div class="cartitem">
+                    <a onclick="minus3()" id="cartminus3" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartminusbtn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
+                    <div id="cartnum3" class="cartnum">0</div>
+                    <a onclick="plus3()" id="cartplus3" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartplusbtn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
+                </div>
+                <img src="img/sigua.png" class="itemimg"/>
+                <a onclick="cartval3()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
+            </div>
+            <!--<a href="#page2">123123</a>-->
+            <div data-role="footer"  class="footer" data-position="fixed" data-tap-toggle="false">
+                <div onclick="tomain1()" class="footbtn btn1" ><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+                <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
+                <div onclick="tomian2()" class="footbtn btn3" ><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
+                <div onclick="tomian3()" class="footbtn btn4" ><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
+            </div>
+        </div>
 
+    </div>
 </div>
 
 
