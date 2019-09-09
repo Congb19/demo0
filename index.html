@@ -57,46 +57,53 @@
         </div>
         <div data-role="content" class="content" id="content1">
             <div class="item">
-                <div class="itemtitle">种菠菜【先种后吃】<br><br>150元/平米</div>
+                <div class="itemtitle">种菠菜【先种后吃】</div>
+                <div class="itemprice">150 元 / 1m²</div>
                 <img src="img/bocai.png" class="itemimg"/>
                 <a onclick="plus1()" id="add1" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item">
                 <div class="itemtitle">种黄瓜【先种后吃】</div>
+                <div class="itemprice">80 元 / 1m²</div>
                 <img src="img/huanggua.png" class="itemimg"/>
                 <a onclick="plus2()" id="add2" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item">
                 <div class="itemtitle">种丝瓜【先种后吃】</div>
+                <div class="itemprice">80 元 / 1m²</div>
                 <img src="img/sigua.png" class="itemimg"/>
                 <a onclick="plus3()" id="add3" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item">
                 <div class="itemtitle">玉米【订货上门】</div>
+                <div class="itemprice">39.80 元 / 2500g</div>
                 <img src="img/yumi.jpg" class="itemimg"/>
                 <a onclick="plus4()" id="add4" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item">
                 <div class="itemtitle">山东大蒜【订货上门】</div>
+                <div class="itemprice">6.80 元 / 200g</div>
                 <img src="img/dasuan.jpg" class="itemimg"/>
                 <a onclick="plus5()" id="add5" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item">
                 <div class="itemtitle">油麦菜【订货上门】</div>
+                <div class="itemprice">6.80 元 / 400g</div>
                 <img src="img/youmaicai.jpg" class="itemimg"/>
                 <a onclick="plus6()" id="add6" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item">
-            <div class="itemtitle">绿黄瓜【订货上门】</div>
+                <div class="itemtitle">绿黄瓜【订货上门】</div>
+                <div class="itemprice">19.90 元 / 1kg</div>
                 <img src="img/lvhuanggua.jpg" class="itemimg"/>
                 <a onclick="plus7()" id="add7" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
         </div>
         <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-            <div onclick="tomain1()" class="footbtn btn1" ><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomain1()" class="footbtn btn1" ><img src="img/shop.png" style="width: 100%; height: 100%"></div>
             <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
-            <div onclick="tomian2()" class="footbtn btn3" ><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
-            <div onclick="tomian3()" class="footbtn btn4" ><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomian2()" class="footbtn btn3" ><img src="img/shopping.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomian3()" class="footbtn btn4" ><img src="img/user.png" style="width: 100%; height: 100%"></div>
         </div>
 
 </div>
@@ -194,11 +201,23 @@
                 <img src="img/sigua.png" class="itemimg"/>
                 <a onclick="cartval7()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
+
+
             <div data-role="footer"  class="footer" data-position="fixed" data-tap-toggle="false">
-                <div onclick="tomain1()" class="footbtn btn1" ><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+                <div id="total">
+                    <div class="totalprice">
+                        <span>总计：</span>
+                        <span id="price">0</span>
+                        <span>&nbsp;元</span>
+                    </div>
+                    <div class="paybtn">
+                        <a onclick="pay()" href="#" class="ui-btn ui-corner-all ui-btn-inline ui-btn-g ui-icon-navigation ui-btn-icon-right" data-rel="popup">结账</a>
+                    </div>
+                </div>
+                <div onclick="tomain1()" class="footbtn btn1" ><img src="img/shop.png" style="width: 100%; height: 100%"></div>
                 <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
-                <div onclick="tomian2()" class="footbtn btn3" ><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
-                <div onclick="tomian3()" class="footbtn btn4" ><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
+                <div onclick="tomian2()" class="footbtn btn3" ><img src="img/shopping.png" style="width: 100%; height: 100%"></div>
+                <div onclick="tomian3()" class="footbtn btn4" ><img src="img/user.png" style="width: 100%; height: 100%"></div>
             </div>
         </div>
 
@@ -209,45 +228,31 @@
 
 
 <div data-role="page" class="暂用的框框" id="page3">
+    <div class="background">
 
-
-
-
-    <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
-        <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
-        <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
-        <h1>淘菜</h1>
-        <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
-        <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
-    </div>
-    <div data-role="content" class="content" id="content3">
-        <div class="item">
-            <div class="itemtitle">种菠菜【先种后吃】</div>
-            <img src="img/bocai.png" class="itemimg"/>
-            <!--<a id="add1" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
+            <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
+            <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
+            <h1>淘菜</h1>
+            <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
+            <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
         </div>
-        <div class="item">
-            <div class="itemtitle">种黄瓜【先种后吃】</div>
-            <img src="img/huanggua.png" class="itemimg"/>
-            <!--<a id="add2" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
+        <div data-role="content" class="content" id="content3">
+            <div class="profilephoto">
+                <img src="img/profilephoto.png" class="photo">
+            </div>
+            <div class="profileitem">
+                <img class="itemicon" src="img/file done.png" height="200" width="200"/>
+                <div class="itemtext">我的订单</div>
+            </div>
         </div>
-        <div class="item">
-            <div class="itemtitle">种菠菜【先种后吃】</div>
-            <img src="img/bocai.png" class="itemimg"/>
-            <!--<a id="add3" href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>-->
-        </div>
-        <!--<a href="#page2">123123</a>-->
         <div data-role="footer"  class="footer" data-position="fixed" data-tap-toggle="false">
-            <div onclick="tomain1()" class="footbtn btn1" ><img src="淘菜app构想 (1)/图标/shop.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomain1()" class="footbtn btn1" ><img src="img/shop.png" style="width: 100%; height: 100%"></div>
             <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
-            <div onclick="tomian2()" class="footbtn btn3" ><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>
-            <div onclick="tomian3()" class="footbtn btn4" ><img src="淘菜app构想 (1)/图标/user.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomian2()" class="footbtn btn3" ><img src="img/shopping.png" style="width: 100%; height: 100%"></div>
+            <div onclick="tomian3()" class="footbtn btn4" ><img src="img/user.png" style="width: 100%; height: 100%"></div>
         </div>
     </div>
-
-
-
-
 </div>
 
 

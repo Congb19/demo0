@@ -16,17 +16,20 @@ $(document).ready(function(){
     // console.log(headerHeightpx);
     // console.log(k);
     // console.log(headerHeight);
-    $(".background").css("height", clientHeight-2*headerHeight);
+    $(".background").css("height", clientHeight-2*headerHeight-2);
 
     updatecart();
 
 });
-
+let cartvalue = 1;
+let z=0,x=0,c=0,v=0,b=0,n=0,m=0;
+let price=0;
 // 各按钮效果
 function tomain1() {
     $("#qiehuan1").click();
 }
 function tomian2() {
+    updatecart();
     $("#qiehuan2").click();
 }
 function tomian3() {
@@ -47,7 +50,17 @@ function updatecart() {
     if ($("#cartnum5").text()=="1") $("#cart5").show();
     if ($("#cartnum6").text()=="1") $("#cart6").show();
     if ($("#cartnum7").text()=="1") $("#cart7").show();
-
+    z=$("#cartnum1").text();
+    x=$("#cartnum2").text();
+    c=$("#cartnum3").text();
+    v=$("#cartnum4").text();
+    b=$("#cartnum5").text();
+    n=$("#cartnum6").text();
+    m=$("#cartnum7").text();
+    price=150*z+80*x+80*c+39.80*v+6.80*b+6.80*n+19.90*m;
+    price=price.toFixed(2);
+    console.log(price);
+    $("#price").text(price);
     console.log("updated!")
 }
 function remove(a) {
@@ -63,7 +76,7 @@ function remove(a) {
     updatecart();
 }
 
-let cartvalue = 1;
+
 
 function cartval1() {
     cartvalue = 1;
@@ -163,3 +176,45 @@ function minus7() {
         updatecart();
     }
 }
+
+
+
+// 交互
+function pay() {
+    console.log(price);
+    // $.post("#",
+    //     {
+    //         price: price
+    //     },
+    //     function(data, status) {
+    //         console.log("Data: " + data + "\nStatus: " + status);
+    //     }
+    // );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

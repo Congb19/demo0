@@ -17,8 +17,12 @@ div,p,a{
 .background{
     width: 100%;
     height: 100%;
-    background-color: #C7EFCD;
+    background-color: #D3F4D9;
 }
+
+
+
+
 .header{
     height: 6rem;
     background-color: #96e6a1 !important;
@@ -41,6 +45,10 @@ div,p,a{
     /*width: 0;*/
     /*font-size: 1rem !important;*/
 }
+
+
+
+
 .item{
     position: relative;
     /*display: inline;*/
@@ -49,7 +57,7 @@ div,p,a{
     left: 0;
     right: 0;
     height: 15rem;
-    background-color: #EEE;
+    background-color: #E4F5E9;
     width: 100%;
 }
 .itemimg{
@@ -66,11 +74,18 @@ div,p,a{
     height: 100%;
 }
 .itemtitle{
-    position: relative;
+    position: absolute;
+    left: 1rem;
     top: 1rem;
 }
+.itemprice{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
 
-/*buttons*/
+
+
 .addbtn{
     position: absolute;
     z-index: 10;
@@ -99,6 +114,31 @@ div,p,a{
     left: 84%;
     transform: translateX(-50%);
 }
+
+
+
+#total{
+    position: absolute;
+    padding: 1rem;
+    bottom: 6rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #E4F5E9;
+}
+.totalprice{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.paybtn{
+    position: absolute;
+    /*height: 100%;*/
+    right: 2rem;
+}
+.ui-btn-g{
+    font-weight: bold;
+    background-color: #96e6a1;
+}
 .cartitem{
     position: absolute;
     bottom: 0.7rem;
@@ -118,4 +158,40 @@ div,p,a{
     position: relative;
     top: 1rem;
     display: inline;
+}
+
+
+
+
+
+
+.profilephoto{
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: auto;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profileitem{
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    background-color: #E4F5E9;
+}
+.itemicon{
+    position: relative;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(40%);
+    height: 60%;
+    width: auto;
+}
+.itemtext{
+
 }
