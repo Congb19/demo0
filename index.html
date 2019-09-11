@@ -22,13 +22,57 @@
 <div data-role="page" id="page1">
 
         <!--PANEL-->
-        <div data-role="panel" id="mesPanel" data-position="left">
+        <div data-role="panel" id="mesPanel" data-position="left" data-position-fixed="true">
             <h2>消息</h2>
-            <p>面板内容..</p>
+            <div class="panelitems">
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/comment.png" height="200" width="200"/>
+                    <div class="itemtext">推荐消息</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/buy.png" height="200" width="200"/>
+                    <div class="itemtext">购买</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/car.png" height="200" width="200"/>
+                    <div class="itemtext">运输</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/safety%20certificate.png" height="200" width="200"/>
+                    <div class="itemtext">交易确认</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/property%20safety.png" height="200" width="200"/>
+                    <div class="itemtext">充值确认</div>
+                </div>
+            </div>
+            <!--<p>面板内容..</p>-->
         </div>
-        <div data-role="panel" id="setPanel" data-position="right">
+        <div data-role="panel" id="setPanel" data-position="right" data-position-fixed="true">
             <h2>设置</h2>
-            <p>面板内容..</p>
+            <div class="panelitems">
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/comment.png" height="200" width="200"/>
+                    <div class="itemtext">推荐消息</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/buy.png" height="200" width="200"/>
+                    <div class="itemtext">购买</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/car.png" height="200" width="200"/>
+                    <div class="itemtext">运输</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/safety%20certificate.png" height="200" width="200"/>
+                    <div class="itemtext">交易确认</div>
+                </div>
+                <div class="panelitem">
+                    <img class="itemicon panelicon" src="img/property%20safety.png" height="200" width="200"/>
+                    <div class="itemtext">充值确认</div>
+                </div>
+            </div>
+            <!--<p>面板内容..</p>-->
         </div>
         <!--MESSAGEBOX-->
         <!--<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">打开对话框弹窗</a>-->
@@ -162,43 +206,43 @@
                 <a onclick="cartval3()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item" id="cart4">
-                <div class="itemtitle">种丝瓜【先种后吃】</div>
+                <div class="itemtitle">玉米【订货上门】</div>
                 <div class="cartitem">
                     <a onclick="minus4()" id="cartminus4" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartminusbtn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
                     <div id="cartnum4" class="cartnum">0</div>
                     <a onclick="plus4()" id="cartplus4" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartplusbtn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
                 </div>
-                <img src="img/sigua.png" class="itemimg"/>
+                <img src="img/yumi.jpg" class="itemimg"/>
                 <a onclick="cartval4()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item" id="cart5">
-                <div class="itemtitle">种丝瓜【先种后吃】</div>
+                <div class="itemtitle">山东大蒜【订货上门】</div>
                 <div class="cartitem">
                     <a onclick="minus5()" id="cartminus5" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartminusbtn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
                     <div id="cartnum5" class="cartnum">0</div>
                     <a onclick="plus5()" id="cartplus5" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartplusbtn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
                 </div>
-                <img src="img/sigua.png" class="itemimg"/>
+                <img src="img/dasuan.jpg" class="itemimg"/>
                 <a onclick="cartval5()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item" id="cart6">
-                <div class="itemtitle">种丝瓜【先种后吃】</div>
+                <div class="itemtitle">油麦菜【订货上门】</div>
                 <div class="cartitem">
                     <a onclick="minus6()" id="cartminus6" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartminusbtn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
                     <div id="cartnum6" class="cartnum">0</div>
                     <a onclick="plus6()" id="cartplus6" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartplusbtn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
                 </div>
-                <img src="img/sigua.png" class="itemimg"/>
+                <img src="img/youmaicai.jpg" class="itemimg"/>
                 <a onclick="cartval6()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
             <div class="item" id="cart7">
-                <div class="itemtitle">种丝瓜【先种后吃】</div>
+                <div class="itemtitle">绿黄瓜【订货上门】</div>
                 <div class="cartitem">
                     <a onclick="minus7()" id="cartminus7" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartminusbtn ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext">-</a>
                     <div id="cartnum7" class="cartnum">0</div>
                     <a onclick="plus7()" id="cartplus7" href="#" data-rel="popup" data-position-to="window" data-transition="fade" class="cartplusbtn ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">+</a>
                 </div>
-                <img src="img/sigua.png" class="itemimg"/>
+                <img src="img/lvhuanggua.jpg" class="itemimg"/>
                 <a onclick="cartval7()" href="#myPopupDialog2" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-delete ui-btn-right ui-btn-icon-notext addbtn">+</a>
             </div>
 
@@ -228,7 +272,7 @@
 
 
 <div data-role="page" class="暂用的框框" id="page3">
-    <div class="background">
+    <div class="background2">
 
         <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
             <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
@@ -241,13 +285,27 @@
             <div class="profilephoto">
                 <img src="img/profilephoto.png" class="photo">
             </div>
-            <div class="profileitem profileitem1">
-                <img class="itemicon" src="img/file done.png" height="200" width="200"/>
-                <div class="itemtext">我的订单</div>
-            </div>
-            <div class="profileitem">
-                <img class="itemicon" src="img/folder-open.png" height="200" width="200"/>
-                <div class="itemtext">我的钱包</div>
+            <div class="profileitems">
+                <div class="profileitem">
+                    <img class="itemicon" src="img/file done.png" height="200" width="200"/>
+                    <div class="itemtext">我的订单</div>
+                </div>
+                <div class="profileitem">
+                    <img class="itemicon" src="img/folder-open.png" height="200" width="200"/>
+                    <div class="itemtext">我的钱包</div>
+                </div>
+                <div class="profileitem">
+                    <img class="itemicon" src="img/point%20map.png" height="200" width="200"/>
+                    <div class="itemtext">我的菜园</div>
+                </div>
+                <div class="profileitem">
+                    <img class="itemicon" src="img/star.png" height="200" width="200"/>
+                    <div class="itemtext">我的收藏</div>
+                </div>
+                <div class="profileitem">
+                    <img class="itemicon" src="img/tags.png" height="200" width="200"/>
+                    <div class="itemtext">我的足迹</div>
+                </div>
             </div>
         </div>
         <div data-role="footer"  class="footer" data-position="fixed" data-tap-toggle="false">

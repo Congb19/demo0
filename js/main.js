@@ -6,23 +6,49 @@ $(document).ready(function(){
     $("#qiehuan2").hide();
     $("#qiehuan3").hide();
 
+    updatebg();
+
+    updatecart();
+});
+
+function updatebg() {
+
     // 初始化背景色
     var clientHeight = document.body.clientHeight;
     // var clientHeight = $("body").css("height");
     var headerHeightpx = $(".header").css("height");
-    var k = headerHeightpx.lastIndexOf("p"); //7
-    var headerHeight = headerHeightpx.slice(0,k);
+    var cartHeightpx = $("#cart1").css("height");
+
+    var k1 = headerHeightpx.lastIndexOf("p");
+    var headerHeight = headerHeightpx.slice(0,k1);
+    var h1 = clientHeight-2*headerHeight-2;
+
+    var k2 = cartHeightpx.lastIndexOf("p");
+    var cartHeight = cartHeightpx.slice(0,k2);
+
+    var c = 0;
+    for (let i=0;i<7;i++) {
+        if(arr[i]==0) continue;
+        else c++;
+    }
+    cartHeight = parseInt(cartHeight);
+    h2 = 55+c*(cartHeight+25);
+    var result = h1>h2?h1:h2;
+
     // console.log(clientHeight);
     // console.log(headerHeightpx);
     // console.log(k);
     // console.log(headerHeight);
-    $(".background").css("height", clientHeight-2*headerHeight-2);
+    console.log(cartHeight);
+    console.log(h1, h2);
 
-    updatecart();
+    $(".background").css("height", result);
+    $(".background2").css("height", h1);
 
-});
+}
+let h2 = 0;
 let cartvalue = 1;
-let z=0,x=0,c=0,v=0,b=0,n=0,m=0;
+let arr=[0,0,0,0,0,0,0];
 let price=0;
 // 各按钮效果
 function tomain1() {
@@ -30,6 +56,7 @@ function tomain1() {
 }
 function tomian2() {
     updatecart();
+    updatebg();
     $("#qiehuan2").click();
 }
 function tomian3() {
@@ -50,17 +77,20 @@ function updatecart() {
     if ($("#cartnum5").text()=="1") $("#cart5").show();
     if ($("#cartnum6").text()=="1") $("#cart6").show();
     if ($("#cartnum7").text()=="1") $("#cart7").show();
-    z=$("#cartnum1").text();
-    x=$("#cartnum2").text();
-    c=$("#cartnum3").text();
-    v=$("#cartnum4").text();
-    b=$("#cartnum5").text();
-    n=$("#cartnum6").text();
-    m=$("#cartnum7").text();
-    price=150*z+80*x+80*c+39.80*v+6.80*b+6.80*n+19.90*m;
+    arr[0]=$("#cartnum1").text();
+    arr[1]=$("#cartnum2").text();
+    arr[2]=$("#cartnum3").text();
+    arr[3]=$("#cartnum4").text();
+    arr[4]=$("#cartnum5").text();
+    arr[5]=$("#cartnum6").text();
+    arr[6]=$("#cartnum7").text();
+    price=150*arr[0]+80*arr[1]+80*arr[2]+39.80*arr[3]+6.80*arr[4]+6.80*arr[5]+19.90*arr[6];
     price=price.toFixed(2);
     console.log(price);
     $("#price").text(price);
+
+    updatebg();
+
     console.log("updated!")
 }
 function remove(a) {

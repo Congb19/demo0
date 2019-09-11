@@ -19,7 +19,11 @@ div,p,a{
     height: 100%;
     background-color: #D3F4D9;
 }
-
+.background2{
+    width: 100%;
+    height: 100%;
+    background-color: #D3F4D9;
+}
 
 
 
@@ -178,25 +182,32 @@ div,p,a{
     height: 100%;
     border-radius: 50%;
 }
+.profileitems{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
 .profileitem{
     position: relative;
     /*display: inline;*/
     /*margin-top: 2rem;*/
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 100%;
     height: 4rem;
     background-color: #E4F5E9;
 }
-.profileitem1{
-    top: 18rem;
-}
+/*.profileitem1{*/
+    /*top: 18rem;*/
+/*}*/
 .itemicon{
     position: relative;
     float: left;
-    left: 1rem;
+    left: 2rem;
     /*top: 50%;*/
     transform: translateY(30%);
-    height: 60%;
+    height: 70%;
     width: auto;
 }
 .itemtext{
@@ -204,4 +215,34 @@ div,p,a{
     left: 5rem;
     /*top: 50%;*/
     transform: translateY(30%);
+}
+
+
+
+
+
+
+
+
+
+.panelitems{
+    position: absolute;
+    top: 20%;
+    left: 3rem;
+    width: 100%;
+    height: auto;
+}
+.panelitem{
+    position: relative;
+    /*display: inline;*/
+    /*margin-top: 2rem;*/
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 80%;
+    height: 4rem;
+    border-bottom: 1px #BBBBBB solid;
+    /*background-color: #E4F5E9;*/
+}
+.panelicon{
+    left: 0 !important;
 }
