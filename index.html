@@ -21,139 +21,190 @@
 <body>
 <div data-role="page" id="page1">
 
-        <!--PANEL-->
-        <div data-role="panel" id="mesPanel" data-position="left" data-position-fixed="true">
-            <h2>消息</h2>
-            <div class="panelitems">
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/comment.png" height="200" width="200"/>
-                    <div class="itemtext">推荐消息</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/buy.png" height="200" width="200"/>
-                    <div class="itemtext">购买</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/car.png" height="200" width="200"/>
-                    <div class="itemtext">运输</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/safety%20certificate.png" height="200" width="200"/>
-                    <div class="itemtext">交易确认</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/property%20safety.png" height="200" width="200"/>
-                    <div class="itemtext">充值确认</div>
-                </div>
+    <!--PANEL-->
+    <div data-role="panel" id="mesPanel" data-position="left" data-position-fixed="true" data-display="overlay">
+        <h2>消息</h2>
+        <div class="panelitems">
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/comment.png" height="200" width="200"/>
+                <div class="itemtext">推荐消息</div>
             </div>
-            <!--<p>面板内容..</p>-->
-        </div>
-        <div data-role="panel" id="setPanel" data-position="right" data-position-fixed="true">
-            <h2>设置</h2>
-            <div class="panelitems">
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/comment.png" height="200" width="200"/>
-                    <div class="itemtext">推荐消息</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/buy.png" height="200" width="200"/>
-                    <div class="itemtext">购买</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/car.png" height="200" width="200"/>
-                    <div class="itemtext">运输</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/safety%20certificate.png" height="200" width="200"/>
-                    <div class="itemtext">交易确认</div>
-                </div>
-                <div class="panelitem">
-                    <img class="itemicon panelicon" src="img/property%20safety.png" height="200" width="200"/>
-                    <div class="itemtext">充值确认</div>
-                </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/buy.png" height="200" width="200"/>
+                <div class="itemtext">购买</div>
             </div>
-            <!--<p>面板内容..</p>-->
-        </div>
-        <!--MESSAGEBOX-->
-        <!--<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">打开对话框弹窗</a>-->
-        <div data-role="popup" id="myPopupDialog1">
-            <!--<div data-role="header">-->
-                <!--<h1>头部文本</h1>-->
-            <!--</div>-->
-            <div data-role="main" class="ui-content">
-                <h2>加入购物车成功!</h2>
-                <p>请前往购物车设置订购量</p>
-                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">返回</a>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/car.png" height="200" width="200"/>
+                <div class="itemtext">运输</div>
             </div>
-            <!--<div data-role="footer">-->
-                <!--<h1>底部文本</h1>-->
-            <!--</div>-->
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/safety%20certificate.png" height="200" width="200"/>
+                <div class="itemtext">交易确认</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/property%20safety.png" height="200" width="200"/>
+                <div class="itemtext">充值确认</div>
+            </div>
         </div>
+    </div>
+    <div data-role="panel" id="setPanel" data-position="right" data-position-fixed="true" data-display="overlay">
+        <h2>设置</h2>
+        <div class="panelitems">
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/nicheng.png" height="200" width="200"/>
+                <div class="itemtext">昵称</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/home.png" height="200" width="200"/>
+                <div class="itemtext">我的收货地址</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/lock.png" height="200" width="200"/>
+                <div class="itemtext">账户与安全</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/customerservice.png" height="200" width="200"/>
+                <div class="itemtext">音效与通知</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/issues%20close.png" height="200" width="200"/>
+                <div class="itemtext">问题反馈</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/message.png" height="200" width="200"/>
+                <div class="itemtext">关于淘菜</div>
+            </div>
+        </div>
+    </div>
 
+    <!--MESSAGEBOX-->
+    <!--<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">打开对话框弹窗</a>-->
+    <div data-role="popup" id="myPopupDialog1">
+        <div data-role="main" class="ui-content">
+            <h2>加入购物车成功!</h2>
+            <p>请前往购物车设置订购量</p>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">返回</a>
+        </div>
+    </div>
 
-        <!--MAINPAGE-->
-        <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
-            <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
-            <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
-            <h1>淘菜</h1>
-            <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
-            <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
+    <!--MAINPAGE-->
+    <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
+        <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
+        <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
+        <h1>淘菜</h1>
+        <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
+        <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
+    </div>
+    <div data-role="content" class="content" id="content1">
+        <div class="item">
+            <div class="itemtitle">种菠菜【先种后吃】</div>
+            <div class="itemprice">150 元 / 1m²</div>
+            <img src="img/bocai.png" class="itemimg"/>
+            <a onclick="plus1()" id="add1" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
         </div>
-        <div data-role="content" class="content" id="content1">
-            <div class="item">
-                <div class="itemtitle">种菠菜【先种后吃】</div>
-                <div class="itemprice">150 元 / 1m²</div>
-                <img src="img/bocai.png" class="itemimg"/>
-                <a onclick="plus1()" id="add1" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-            </div>
-            <div class="item">
-                <div class="itemtitle">种黄瓜【先种后吃】</div>
-                <div class="itemprice">80 元 / 1m²</div>
-                <img src="img/huanggua.png" class="itemimg"/>
-                <a onclick="plus2()" id="add2" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-            </div>
-            <div class="item">
-                <div class="itemtitle">种丝瓜【先种后吃】</div>
-                <div class="itemprice">80 元 / 1m²</div>
-                <img src="img/sigua.png" class="itemimg"/>
-                <a onclick="plus3()" id="add3" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-            </div>
-            <div class="item">
-                <div class="itemtitle">玉米【订货上门】</div>
-                <div class="itemprice">39.80 元 / 2500g</div>
-                <img src="img/yumi.jpg" class="itemimg"/>
-                <a onclick="plus4()" id="add4" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-            </div>
-            <div class="item">
-                <div class="itemtitle">山东大蒜【订货上门】</div>
-                <div class="itemprice">6.80 元 / 200g</div>
-                <img src="img/dasuan.jpg" class="itemimg"/>
-                <a onclick="plus5()" id="add5" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-            </div>
-            <div class="item">
-                <div class="itemtitle">油麦菜【订货上门】</div>
-                <div class="itemprice">6.80 元 / 400g</div>
-                <img src="img/youmaicai.jpg" class="itemimg"/>
-                <a onclick="plus6()" id="add6" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-            </div>
-            <div class="item">
-                <div class="itemtitle">绿黄瓜【订货上门】</div>
-                <div class="itemprice">19.90 元 / 1kg</div>
-                <img src="img/lvhuanggua.jpg" class="itemimg"/>
-                <a onclick="plus7()" id="add7" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
-            </div>
+        <div class="item">
+            <div class="itemtitle">种黄瓜【先种后吃】</div>
+            <div class="itemprice">80 元 / 1m²</div>
+            <img src="img/huanggua.png" class="itemimg"/>
+            <a onclick="plus2()" id="add2" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
         </div>
-        <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-            <div onclick="tomain1()" class="footbtn btn1" ><img src="img/shop.png" style="width: 100%; height: 100%"></div>
-            <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
-            <div onclick="tomian2()" class="footbtn btn3" ><img src="img/shopping.png" style="width: 100%; height: 100%"></div>
-            <div onclick="tomian3()" class="footbtn btn4" ><img src="img/user.png" style="width: 100%; height: 100%"></div>
+        <div class="item">
+            <div class="itemtitle">种丝瓜【先种后吃】</div>
+            <div class="itemprice">80 元 / 1m²</div>
+            <img src="img/sigua.png" class="itemimg"/>
+            <a onclick="plus3()" id="add3" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
         </div>
+        <div class="item">
+            <div class="itemtitle">玉米【订货上门】</div>
+            <div class="itemprice">39.80 元 / 2500g</div>
+            <img src="img/yumi.jpg" class="itemimg"/>
+            <a onclick="plus4()" id="add4" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        </div>
+        <div class="item">
+            <div class="itemtitle">山东大蒜【订货上门】</div>
+            <div class="itemprice">6.80 元 / 200g</div>
+            <img src="img/dasuan.jpg" class="itemimg"/>
+            <a onclick="plus5()" id="add5" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        </div>
+        <div class="item">
+            <div class="itemtitle">油麦菜【订货上门】</div>
+            <div class="itemprice">6.80 元 / 400g</div>
+            <img src="img/youmaicai.jpg" class="itemimg"/>
+            <a onclick="plus6()" id="add6" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        </div>
+        <div class="item">
+            <div class="itemtitle">绿黄瓜【订货上门】</div>
+            <div class="itemprice">19.90 元 / 1kg</div>
+            <img src="img/lvhuanggua.jpg" class="itemimg"/>
+            <a onclick="plus7()" id="add7" href="#myPopupDialog1" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-icon-plus ui-btn-right ui-btn-icon-notext addbtn">+</a>
+        </div>
+    </div>
+    <div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
+        <div onclick="tomain1()" class="footbtn btn1" ><img src="img/shop.png" style="width: 100%; height: 100%"></div>
+        <!--<div class="footbtn" id="btn2"><img src="淘菜app构想 (1)/图标/shopping.png" style="width: 100%; height: 100%"></div>-->
+        <div onclick="tomian2()" class="footbtn btn3" ><img src="img/shopping.png" style="width: 100%; height: 100%"></div>
+        <div onclick="tomian3()" class="footbtn btn4" ><img src="img/user.png" style="width: 100%; height: 100%"></div>
+    </div>
 
 </div>
 
 
 <div data-role="page" class="暂用的框框" id="page2">
+    <!--PANEL-->
+    <div data-role="panel" id="mesPanel2" data-position="left" data-position-fixed="true" data-display="overlay">
+        <h2>消息</h2>
+        <div class="panelitems">
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/comment.png" height="200" width="200"/>
+                <div class="itemtext">推荐消息</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/buy.png" height="200" width="200"/>
+                <div class="itemtext">购买</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/car.png" height="200" width="200"/>
+                <div class="itemtext">运输</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/safety%20certificate.png" height="200" width="200"/>
+                <div class="itemtext">交易确认</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/property%20safety.png" height="200" width="200"/>
+                <div class="itemtext">充值确认</div>
+            </div>
+        </div>
+    </div>
+    <div data-role="panel" id="setPanel2" data-position="right" data-position-fixed="true" data-display="overlay">
+        <h2>设置</h2>
+        <div class="panelitems">
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/nicheng.png" height="200" width="200"/>
+                <div class="itemtext">昵称</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/home.png" height="200" width="200"/>
+                <div class="itemtext">我的收货地址</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/lock.png" height="200" width="200"/>
+                <div class="itemtext">账户与安全</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/customerservice.png" height="200" width="200"/>
+                <div class="itemtext">音效与通知</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/issues%20close.png" height="200" width="200"/>
+                <div class="itemtext">问题反馈</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/message.png" height="200" width="200"/>
+                <div class="itemtext">关于淘菜</div>
+            </div>
+        </div>
+    </div>
 
     <div data-role="popup" id="myPopupDialog2">
         <div data-role="main" class="ui-content">
@@ -165,14 +216,12 @@
     </div>
 
     <div class="background">
-
-
         <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
             <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
-            <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
+            <a href="#mesPanel2" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
             <h1>购物车</h1>
             <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
-            <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
+            <a href="#setPanel2" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
         </div>
         <div data-role="content" class="content" id="content2">
             <div class="item" id="cart1">
@@ -272,14 +321,69 @@
 
 
 <div data-role="page" class="暂用的框框" id="page3">
-    <div class="background2">
+    <!--PANEL-->
+    <div data-role="panel" id="mesPanel3" data-position="left" data-position-fixed="true" data-display="overlay">
+        <h2>消息</h2>
+        <div class="panelitems">
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/comment.png" height="200" width="200"/>
+                <div class="itemtext">推荐消息</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/buy.png" height="200" width="200"/>
+                <div class="itemtext">购买</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/car.png" height="200" width="200"/>
+                <div class="itemtext">运输</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/safety%20certificate.png" height="200" width="200"/>
+                <div class="itemtext">交易确认</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/property%20safety.png" height="200" width="200"/>
+                <div class="itemtext">充值确认</div>
+            </div>
+        </div>
+    </div>
+    <div data-role="panel" id="setPanel3" data-position="right" data-position-fixed="true" data-display="overlay">
+        <h2>设置</h2>
+        <div class="panelitems">
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/nicheng.png" height="200" width="200"/>
+                <div class="itemtext">昵称</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/home.png" height="200" width="200"/>
+                <div class="itemtext">我的收货地址</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/lock.png" height="200" width="200"/>
+                <div class="itemtext">账户与安全</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/customerservice.png" height="200" width="200"/>
+                <div class="itemtext">音效与通知</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/issues%20close.png" height="200" width="200"/>
+                <div class="itemtext">问题反馈</div>
+            </div>
+            <div class="panelitem">
+                <img class="itemicon panelicon" src="img/message.png" height="200" width="200"/>
+                <div class="itemtext">关于淘菜</div>
+            </div>
+        </div>
+    </div>
 
+    <div class="background2">
         <div data-role="header" class="header" data-position="fixed" data-tap-toggle="false">
             <!--<a href="#mesPanel" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-left headbtn"></a>-->
-            <a href="#mesPanel" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
-            <h1>淘菜</h1>
+            <a href="#mesPanel3" class="ui-btn ui-corner-all ui-icon-comment ui-btn-left ui-btn-icon-notext headbtn">图标</a>
+            <h1>我的</h1>
             <!--<a href="#setPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-btn-right headbtn"></a>-->
-            <a href="#setPanel" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
+            <a href="#setPanel3" class="ui-btn ui-corner-all ui-icon-gear ui-btn-right ui-btn-icon-notext headbtn">图标</a>
         </div>
         <div data-role="content" class="content" id="content3">
             <div class="profilephoto">
