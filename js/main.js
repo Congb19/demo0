@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("#qiehuan1").hide();
     $("#qiehuan2").hide();
     $("#qiehuan3").hide();
+    $(".calldetails").hide();
 
     updatebg();
 
@@ -51,6 +52,41 @@ let cartvalue = 1;
 let arr=[0,0,0,0,0,0,0];
 let price=0;
 // 各按钮效果
+function call1() {
+    $("#calldetail1").click();
+    console.log("call ok");
+}
+function call2() {
+    $("#calldetail2").click();
+    console.log("call ok");
+}
+
+function call3() {
+    $("#calldetail3").click();
+    console.log("call ok");
+}
+
+function call4() {
+    $("#calldetail4").click();
+    console.log("call ok");
+}
+
+function call5() {
+    $("#calldetail5").click();
+    console.log("call ok");
+}
+
+function call6() {
+    $("#calldetail6").click();
+    console.log("call ok");
+}
+
+function call7() {
+    $("#calldetail7").click();
+    console.log("call ok");
+}
+
+
 function tomain1() {
     $("#qiehuan1").click();
 }
