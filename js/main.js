@@ -90,13 +90,25 @@ function call7() {
 function tomain1() {
     $("#qiehuan1").click();
 }
-function tomian2() {
+function tomain2() {
     updatecart();
     updatebg();
     $("#qiehuan2").click();
 }
-function tomian3() {
+function tomain3() {
     $("#qiehuan3").click();
+}
+function tomain4() {
+    $("#qiehuan4").click();
+}
+function tomain5() {
+    $("#qiehuan5").click();
+}
+function tomain6() {
+    $("#qiehuan6").click();
+}
+function tomain7() {
+    $("#qiehuan7").click();
 }
 function updatecart() {
     if ($("#cartnum1").text()=="0") $("#cart1").hide();
@@ -141,6 +153,18 @@ function remove(a) {
     }
     updatecart();
 }
+function removeall() {
+    remove(1);
+    remove(2);
+    remove(3);
+    remove(4);
+    remove(5);
+    remove(6);
+    remove(7);
+}
+
+
+
 
 
 
